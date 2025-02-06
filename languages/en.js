@@ -159,7 +159,8 @@ module.exports = {
         noResults: "- No results found.",
         requestUpdated: "Request Updated!",
         successProcessed: "- Your request has been successfully processed.\n- Please use buttons to control playback",
-        errorProcessing: "- An error occurred while processing your request."
+        errorProcessing: "- An error occurred while processing your request.",
+        footer: "Developed by HDDT"
     },
     commandDescription: "Enter song name / link or playlist"
   },
