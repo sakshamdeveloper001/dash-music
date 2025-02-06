@@ -23,7 +23,7 @@ module.exports = {
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
-                    .replace("{githubLink}", SupportServer2)
+                    .replace("{githubLink}", supportServer2)
                     .replace("{replitLink}", youtubeLink)
                     .replace("{youtubeLink}", youtubeLink2)
                 )
