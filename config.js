@@ -8,7 +8,7 @@ module.exports = {
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
-  activityName: "🎵 Music With My Friends", 
+  activityName: "🎶 Music With My Friends", 
   activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/E8pbc9EX2f",
   embedTimeout: 5, 
