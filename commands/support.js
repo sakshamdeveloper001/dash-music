@@ -19,7 +19,7 @@ module.exports = {
                 .setAuthor({
                     name: lang.support.embed.authorName,
                     iconURL: musicIcons.beats2Icon, 
-                    url: config.SupportServer
+                    url: supportServerLink
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
