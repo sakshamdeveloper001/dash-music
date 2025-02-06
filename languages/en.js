@@ -255,7 +255,7 @@ module.exports = {
   support: {
     embed: {
         authorName: "Support Server",
-        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n\n➡️ **Follow us on:**\n- GitHub - {githubLink}\n- Replit - {replitLink}\n- YouTube - {youtubeLink}",
+        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n- Discord2 - {supportServeLink2}\n\n➡️ **Follow us on:**\n- Youtube - {youtubeLink}\n- YouTube2 - {youtubeLink2}",
         error: "Error",
         errorDescription: "- An error occurred while processing your request."
     }
