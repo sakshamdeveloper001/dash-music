@@ -26,7 +26,7 @@ async function nowPlaying(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.nowPlaying.embed.f, iconURL: musicIcons.heartIcon })
                 .setDescription(lang.nowPlaying.embed.noSong);
 
             await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
@@ -43,7 +43,7 @@ async function nowPlaying(client, interaction, lang) {
                 url: config.SupportServer
             })
             .setDescription(`- [${player.current.info.title} - ${player.current.info.author}](${player.current.info.uri})\n\n${progressBar}`)
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.nowPlaying.embed.f, iconURL: musicIcons.heartIcon })
             .setThumbnail(player.current.info.thumbnail);
 
         await interaction.reply({ embeds: [npEmbed] });
@@ -57,7 +57,7 @@ async function nowPlaying(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.nowPlaying.embed.f, iconURL: musicIcons.heartIcon })
             .setDescription(lang.nowPlaying.embed.errorDescription);
 
         await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
