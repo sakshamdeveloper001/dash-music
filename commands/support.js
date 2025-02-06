@@ -11,7 +11,7 @@ module.exports = {
         try {
             const supportServerLink = "https://discord.gg/E8pbc9EX2f";
             const githubLink = "https://discord.hazardousdefenseforce.pages.dev/";
-            const replitLink = "https://replit.com/@GlaceYT";
+            const replitLink = "https://www.youtube.com/channel/UCKxL_CqFtQ98Hmq3zoNtrNw";
             const youtubeLink = "http://www.youtube.com/@LeftDC-33";
 
             const embed = new EmbedBuilder()
