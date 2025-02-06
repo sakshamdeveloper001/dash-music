@@ -23,9 +23,9 @@ module.exports = {
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
-                    .replace("{githubLink}", supportServer2)
-                    .replace("{replitLink}", youtubeLink)
-                    .replace("{youtubeLink}", youtubeLink2)
+                    .replace("{supportServer2}", githubLink)
+                    .replace("{youtubeLink}", replitLink)
+                    .replace("{youtubeLink2}", youtubeLink)
                 )
                 .setImage('https://i.imgur.com/ZK30wxa.png')
                 .setTimestamp();
