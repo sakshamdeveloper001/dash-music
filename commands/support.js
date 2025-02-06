@@ -12,7 +12,7 @@ module.exports = {
             const supportServerLink = "https://discord.gg/E8pbc9EX2f";
             const githubLink = "https://discord.hazardousdefenseforce.pages.dev/";
             const replitLink = "https://replit.com/@GlaceYT";
-            const youtubeLink = "https://www.youtube.com/@GlaceYT";
+            const youtubeLink = "http://www.youtube.com/@LeftDC-33";
 
             const embed = new EmbedBuilder()
                 .setColor('#b300ff')
