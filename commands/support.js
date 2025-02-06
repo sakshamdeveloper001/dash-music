@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, interaction, lang) => {
         try {
             const supportServerLink = "https://discord.gg/E8pbc9EX2f";
-            const supportServerLink2 = "https://discord.hazardousdefenseforce.pages.dev/";
+            const supportServerLink2 = "https://discord.hazardousdefenseforce.pages.dev";
             const youtubeLink = "https://www.youtube.com/channel/UCKxL_CqFtQ98Hmq3zoNtrNw";
             const youtubeLink2 = "http://www.youtube.com/@LeftDC-33";
 
