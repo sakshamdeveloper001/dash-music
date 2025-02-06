@@ -99,8 +99,7 @@ async function play(client, interaction, lang) {
                 iconURL: musicIcons.beats2Icon,
                 url: config.SupportServer
             })
-            .setDescription(lang.play.embed.successProcessed)
-            .setFooter({ text: lang.play.embed.footer, iconURL: musicIcons.heartIcon });
+            .setDescription(lang.play.embed.successProcessed);
 
         await interaction.followUp({ embeds: [randomEmbed] });
 
