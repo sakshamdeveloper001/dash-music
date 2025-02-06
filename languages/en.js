@@ -139,7 +139,8 @@ module.exports = {
         error: "Error",
         noSong: "- There is no song currently playing.",
         nowPlaying: "Now Playing!",
-        errorDescription: "- An error occurred while processing your request."
+        errorDescription: "- An error occurred while processing your request.",
+        f: "Developed by HDDT"
     }
   },
   pause: {
