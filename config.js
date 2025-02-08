@@ -22,10 +22,10 @@ module.exports = {
       secure: false
     },
     {
-      name: "ChalresNaig Node",
-      password: "NAIGLAVA-dash.techbyte.host",
-      host: "lavahatry4.techbyte.host",
-      port: 3000,
+      name: "lavalinkv4.serenetia.com",
+      password: "https://dsc.gg/ajidevserver",
+      host: "lavalinkv4.serenetia.com",
+      port: 80,
       secure: false
     }
   ]
