@@ -22,10 +22,10 @@ module.exports = {
       secure: false
     },
     {
-      name: "lavalinkv4.serenetia.com",
-      password: "https://dsc.gg/ajidevserver",
-      host: "lavalinkv4.serenetia.com",
-      port: 80,
+      name: "lavalink.clxud.dev",
+      password: "youshallnotpass",
+      host: "lavalink.clxud.dev",
+      port: 2333,
       secure: false
     }
   ]
