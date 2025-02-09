@@ -10,9 +10,7 @@ module.exports = {
     run: async (client, interaction, lang) => {
         try {
             const supportServerLink = "https://discord.gg/E8pbc9EX2f";
-            const supportServerLink2 = "https://discord.hazardousdefenseforce.pages.dev";
-            const youtubeLink = "https://www.youtube.com/channel/UCKxL_CqFtQ98Hmq3zoNtrNw";
-            const youtubeLink2 = "http://www.youtube.com/@LeftDC-33";
+            const website = "https://flixzbot.pages.dev";
 
             const embed = new EmbedBuilder()
                 .setColor('#b300ff')
@@ -23,11 +21,9 @@ module.exports = {
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
-                    .replace("{supportServerLink2}", supportServerLink2)
-                    .replace("{youtubeLink}", youtubeLink)
-                    .replace("{youtubeLink2}", youtubeLink2)
+                    .replace("{website}", website)
                 )
-                .setImage('https://i.imgur.com/ZK30wxa.png')
+                .setImage('https://i.imgur.com/GAuL4tT.png')
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed] });
