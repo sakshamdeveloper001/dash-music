@@ -10,7 +10,7 @@ module.exports = {
   embedColor: "#1db954",
   activityName: "🎶 Music With My Friends", 
   activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
-  SupportServer: "https://discord.gg/E8pbc9EX2f",
+  SupportServer: "https://discord.gg/c5r3vH3sqt",
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
