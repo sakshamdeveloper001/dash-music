@@ -9,7 +9,7 @@ module.exports = {
     options: [],
     run: async (client, interaction, lang) => {
         try {
-            const supportServerLink = "https://discord.gg/E8pbc9EX2f";
+            const supportServerLink = "https://discord.gg/c5r3vH3sqt";
             const website = "https://flexzbot.pages.dev";
 
             const embed = new EmbedBuilder()
