@@ -1,5 +1,5 @@
 module.exports = {
-    footer: "Developed by HDDT",
+    footer: "Developed by FDT",
     ping: {
       description: "Check the bot latency",
       response: "Pinging...",
@@ -8,7 +8,7 @@ module.exports = {
         responseTime: "- Bot Response Time : **{latency}ms**",
         websocketPing: "- WebSocket Ping : **{ping}ms**",
         uptime: "- Uptime : **{uptime}**",
-        footer: "Developed by HDDT"
+        footer: "Developed by FDT"
       }
     },
     addsong: {
@@ -140,7 +140,7 @@ module.exports = {
         noSong: "- There is no song currently playing.",
         nowPlaying: "Now Playing!",
         errorDescription: "- An error occurred while processing your request.",
-        f: "Developed by HDDT"
+        f: "Developed by FDT"
     }
   },
   pause: {
@@ -257,7 +257,7 @@ module.exports = {
   support: {
     embed: {
         authorName: "Support Server",
-        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n- Discord2 - {supportServerLink2}\n\n➡️ **Follow us on:**\n- Youtube - {youtubeLink}\n- YouTube2 - {youtubeLink2}",
+        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n- Website - {website}",
         error: "Error",
         errorDescription: "- An error occurred while processing your request."
     }
