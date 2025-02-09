@@ -8,8 +8,15 @@ const colors = require("./UI/colors/colors");
 require("dotenv").config();
 
 const client = new Client({
-    intents: Object.values(GatewayIntentBits),
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers, // Required for member join events
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent, // Required for reading messages
+        GatewayIntentBits.GuildVoiceStates, // Required for voice-based bots
+    ],
 });
+
 
 const lang = require("./languages/en.js"); // Ensure this is the correct path
 client.lang = lang;
