@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, interaction, lang) => {
         try {
             const supportServerLink = "https://discord.gg/E8pbc9EX2f";
-            const website = "https://flixzbot.pages.dev";
+            const website = "https://flexzbot.pages.dev";
 
             const embed = new EmbedBuilder()
                 .setColor('#b300ff')
