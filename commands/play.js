@@ -19,7 +19,7 @@ async function play(client, interaction, lang) {
                 .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
                 .setDescription(lang.play.embed.noVoiceChannel);
 
-            await interaction.reply({ embeds: [embed], ephemeral: true });
+            await interaction.reply({ embeds: [embed], ephemeral: true }).catch(() => {});
             return;
         }
 
@@ -34,10 +34,11 @@ async function play(client, interaction, lang) {
                 .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
                 .setDescription(lang.play.embed.noLavalinkNodes);
 
-            await interaction.reply({ embeds: [embed], ephemeral: true });
+            await interaction.reply({ embeds: [embed], ephemeral: true }).catch(() => {});
             return;
         }
 
+        // Create the player connection
         const player = client.riffy.createConnection({
             guildId: interaction.guildId,
             voiceChannel: interaction.member.voice.channelId,
@@ -45,7 +46,8 @@ async function play(client, interaction, lang) {
             deaf: true
         });
 
-        await interaction.deferReply();
+        // Try to defer reply (catch errors to prevent crashes)
+        await interaction.deferReply().catch(() => {});
 
         const resolve = await client.riffy.resolve({ query: query, requester: interaction.user.username });
         if (!resolve || typeof resolve !== 'object') {
@@ -88,11 +90,11 @@ async function play(client, interaction, lang) {
                 .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
                 .setDescription(lang.play.embed.noResults);
 
-            await interaction.editReply({ embeds: [errorEmbed] });
+            await interaction.editReply({ embeds: [errorEmbed] }).catch(() => {});
             return;
         }
 
-        const randomEmbed = new EmbedBuilder()
+        const successEmbed = new EmbedBuilder()
             .setColor(config.embedColor)
             .setAuthor({
                 name: lang.play.embed.requestUpdated,
@@ -102,7 +104,7 @@ async function play(client, interaction, lang) {
             .setDescription(lang.play.embed.successProcessed)
             .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon });
 
-        await interaction.followUp({ embeds: [randomEmbed] });
+        await interaction.followUp({ embeds: [successEmbed] }).catch(() => {});
 
     } catch (error) {
         console.error('Error processing play command:', error);
@@ -117,9 +119,9 @@ async function play(client, interaction, lang) {
             .setDescription(lang.play.embed.errorProcessing);
 
         if (interaction.deferred || interaction.replied) {
-            await interaction.editReply({ embeds: [errorEmbed] });
+            await interaction.editReply({ embeds: [errorEmbed] }).catch(() => {});
         } else {
-            await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
+            await interaction.reply({ embeds: [errorEmbed], ephemeral: true }).catch(() => {});
         }
     }
 }
