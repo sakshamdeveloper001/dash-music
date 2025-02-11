@@ -12,7 +12,8 @@ const client = new Client({
 });
 
 
-const lang = require("./languages/en.js"); // Ensure this is the correct path
+const lang = require("./languages/en.js");
+const statusUpdate = require('./events/statusUpdate.js');// Ensure this is the correct path
 client.lang = lang;
 
 client.config = config;
