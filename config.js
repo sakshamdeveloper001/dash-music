@@ -42,13 +42,6 @@ module.exports = {
       port: 2333,
       secure: false
     },
-      {
-      name: "lavalinkv4.serenetia.com",
-      password: "https://dsc.gg/ajidevserve",
-      host: "lavalinkv4.serenetia.com",
-      port: 80,
-      secure: false
-    },
     {
       name: "lavalink.jirayu.net",
       password: "youshallnotpass",
@@ -71,23 +64,9 @@ module.exports = {
       secure: false
     },
     {
-      name: "lavalink.anantix.network",
-      password: "pg6|(}7fuD_:7d#QQq?9",
-      host: "lavalink.anantix.network",
-      port: 2335,
-      secure: false
-    },
-    {
       name: "lava-v4.nextgencoders.xyz",
       password: "freemenahimilta",
       host: "lava-v4.nextgencoders.xyz",
-      port: 2333,
-      secure: false
-    },
-    {
-      name: "lavalink.alya-project.me",
-      password: "https://alya-project.me/",
-      host: "lavalink.alya-project.me",
       port: 2333,
       secure: false
     },
