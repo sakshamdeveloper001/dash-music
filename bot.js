@@ -13,12 +13,15 @@ const client = new Client({
 
 
 const lang = require("./languages/en.js");
-const statusUpdate = require('./events/status.js');// Ensure this is the correct path
 client.lang = lang;
 
 client.config = config;
 client.commands = new Collection(); // Store commands properly
 initializePlayer(client);
+
+console.log("[DEBUG] Loading status system...");
+const statusUpdate = require("./events/status.js");
+statusUpdate(client);
 
 // ✅ Event Handler (Fixes `.bind` issue)
 fs.readdirSync("./events").forEach((file) => {
