@@ -28,21 +28,21 @@ module.exports = {
       port: 3000,
       secure: false
     },
-         {
+      {
       name: "Koi Node V4",
       password: "prplmoe.me",
       host: "lavav4.prplmoe.me",
       port: 1118,
       secure: false
     },
-         {
+      {
       name: "lavalink.clxud.dev",
       password: "youshallnotpass",
       host: "lavalink.clxud.dev",
       port: 2333,
       secure: false
     },
-         {
+      {
       name: "lavalinkv4.serenetia.com",
       password: "https://dsc.gg/ajidevserve",
       host: "lavalinkv4.serenetia.com",
@@ -90,6 +90,20 @@ module.exports = {
       host: "lavalink.alya-project.me",
       port: 2333,
       secure: false
-    }
+    },
+    {
+      name: "lava-v4.ajieblogs.eu.org",
+      password: "https://dsc.gg/ajidevserver",
+      host: "lava-v4.ajieblogs.eu.org",
+      port: 443,
+      secure: true
+    },
+    {
+      name: "lavalinkv4.serenetia.com",
+      password: "https://dsc.gg/ajidevserve",
+      host: "lavalinkv4.serenetia.com",
+      port: 443,
+      secure: true
+    } 
   ]
 }
