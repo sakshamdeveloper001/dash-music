@@ -106,12 +106,11 @@ module.exports = {
       secure: true
     },
     {
-     {
-     "name": "Muzykant v4 SSL",
-     "password": "https://discord.gg/v6sdrD9kPh",
-     "host": "lavalink_v4.muzykant.xyz",
-     "port": 443,
-     "secure": true
+      name: "Muzykant v4 SSL",
+      password: "https://discord.gg/v6sdrD9kPh",
+      host: "lavalink_v4.muzykant.xyz",
+      port: 443,
+      secure: true
     }         
   ]
 }
