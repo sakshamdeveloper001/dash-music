@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require("discord.js");
 
-const STATUS_CHANNEL_ID = "YOUR_CHANNEL_ID";
+const STATUS_CHANNEL_ID = "1337437184491393068";
 let statusMessageId = null;
 
 module.exports = async (client) => {
