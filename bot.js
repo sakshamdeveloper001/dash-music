@@ -19,7 +19,6 @@ client.config = config;
 client.commands = new Collection(); // Store commands properly
 initializePlayer(client);
 
-console.log("[DEBUG] Loading status system...");
 const statusUpdate = require("./events/status.js");
 statusUpdate(client);
 
