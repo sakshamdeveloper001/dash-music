@@ -24,11 +24,12 @@ async function updateBotStatus(client) {
             color = 0xffff00;
         }
 
+        const now = Math.floor(Date.now() / 1000); // Convert to Unix timestamp
+
         const embed = new EmbedBuilder()
             .setTitle("🤖 Bot Status")
-            .setDescription(`**Status:** ${status}\n📡 **Ping:** ${botPing}ms`)
-            .setColor(color)
-            .setFooter({ text: `Last Updated`, timestamp: Date.now() });
+            .setDescription(`**Status:** ${status}\n📡 **Ping:** ${botPing}ms\n\n🕒 **Last Updated:** <t:${now}:R>`)
+            .setColor(color);
 
         if (statusMessageId) {
             const msg = await statusChannel.messages.fetch(statusMessageId).catch(() => null);
