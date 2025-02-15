@@ -29,6 +29,11 @@ module.exports = {
 
       const ping = client.ws.ping;
 
+      const commandList = commandFiles.map(file => {
+        const command = require(path.join(commandsPath, file));
+        return `\`/${command.name}\` - ${command.description || lang.help.embed.noDescription}`;
+      });
+
       const embed = new EmbedBuilder()
         .setColor(config.embedColor || "#7289DA")
         .setTitle(lang.help.embed.title.replace("{botName}", botName))
@@ -47,13 +52,9 @@ module.exports = {
           .replace("{ping}", ping)
         )
         .addFields(
-          {
-            name: lang.help.embed.availableCommands,
-            value: commandFiles.map(file => {
-              const command = require(path.join(commandsPath, file));
-              return `\`/${command.name}\` - ${command.description || lang.help.embed.noDescription}`;
-            }).join('\n') || lang.help.embed.noCommands
-          }
+          { name: lang.help.embed.availableCommands, value: commandList.slice(0, 10).join('\n') || lang.help.embed.noCommands },
+          { name: '\u200B', value: commandList.slice(10, 20).join('\n') || lang.help.embed.noCommands },
+          { name: '\u200B', value: commandList.slice(20, 30).join('\n') || lang.help.embed.noCommands }
         )
         .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
         .setTimestamp();
